@@ -10,5 +10,5 @@ fi
 while IFS= read -r line
 do
     # Delete the directory or file
-    echo "$line"
+    rm -rf "$line"
 done < "$1"
